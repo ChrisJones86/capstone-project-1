@@ -1,10 +1,10 @@
 import "./App.css";
-import Home from "./components/Home";
-import BookingPage from "./components/BookingPage";
+import Home from "./Components/Home";
+import BookingPage from "./Components/BookingPage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useReducer, useState } from "react";
 import { fetchAPI, submitAPI } from "./API/Api";
-import ConfirmedBooking from "./components/ConfirmedBooking";
+import ConfirmedBooking from "./Components/ConfirmedBooking";
 
 function App() {
   const [bookingData, setBookingData] = useState({
