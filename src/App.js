@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useReducer, useState } from "react";
 import { fetchAPI, submitAPI } from "./API/Api";
 import ConfirmedBooking from "./Components/ConfirmedBooking";
+import React from "react";
 
 function App() {
   const [bookingData, setBookingData] = useState({
@@ -14,7 +15,6 @@ function App() {
     occasion: " ",
   });
 
-  
   const today = new Date();
 
   const init = { times: fetchAPI(today) };

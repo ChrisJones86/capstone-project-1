@@ -1,5 +1,5 @@
 import Nav from "./Nav";
-import logo from "../assets/icons/Logo.png";
+import logo from "../assets/icons/Logopng.png";
 
 import React from "react";
 

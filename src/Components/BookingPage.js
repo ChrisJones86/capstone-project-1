@@ -1,6 +1,7 @@
 import Header from "./Header";
 import Footer from "./Footer";
 import BookingForm from "./BookingForm";
+import React from "react";
 
 const BookingPage = ({
   bookingData,

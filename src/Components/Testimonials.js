@@ -1,8 +1,9 @@
-import ratings from "../assets/icons/rating.png";
+import ratings from "../assets/icons/ratingpng.png";
 import profile1 from "../assets/images/profile1.jpg";
 import profile2 from "../assets/images/profile2-copy-0.jpg";
 import profile3 from "../assets/images/profile3.jpg";
 import profile4 from "../assets/images/profile2.jpg";
+import React from "react";
 
 function Testimonials() {
   return (

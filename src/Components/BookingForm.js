@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../css/booking.css";
+import React from "react";
+
 const BookingForm = ({
   bookingData,
   setBookingData,
@@ -128,7 +130,6 @@ const BookingForm = ({
 
     if (submitForm() === true) {
       console.log("success");
-      navigate("/confirmation");
     } else {
       alert("Error");
     }

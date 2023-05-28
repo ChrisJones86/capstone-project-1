@@ -1,6 +1,7 @@
 import Header from "./Header";
 import Footer from "./Footer";
 import { useEffect } from "react";
+import React from "react";
 
 const ConfirmedBooking = ({
   bookingData,
