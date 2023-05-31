@@ -48,17 +48,17 @@ function Footer() {
           <ul>
             <h5>Contact</h5>
             <li>
-              <a id="nav" href="#">
+              <a id="nav">
                 Phone Number
               </a>
             </li>
             <li>
-              <a id="nav" href="#">
+              <a id="nav">
                 Email
               </a>
             </li>
             <li>
-              <a id="nav" href="#">
+              <a id="nav">
                 Address
               </a>
             </li>
