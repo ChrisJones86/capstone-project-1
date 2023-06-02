@@ -1,26 +1,26 @@
 import React from "react";
-import waiter from "../images/waiter.png"
+import Mario_and_Adrian from "../images/Mario and Adrian b.jpg"
 import { Link } from "react-router-dom";
 
-const Header = () => {
+const About = () => {
     return(
-        <header>
+        <about>
             <section>
                 <div>
-                    <h2>Little Lemon</h2>
-                    <h3>Chicago</h3>
+                    <h3>Little Lemon</h3>
+                    <h4>Chicago</h4>
                         <p>We are a family owned Mediterraneran restaurant, focused on traditional recipes servred with a modern twist.</p>
                                 <Link to="/Booking"><button aria-label="On Click">Reserve Table</button></Link>
                  </div>
                  <div>
-                     <img src={waiter} alt="" />
+                     <img src={Mario_and_Adrian} alt="" />
                 </div>
                 <div>
 
                 </div>
             </section>
-        </header>
+        </about>
     )
 }
 
-export default Header;
+export default About;

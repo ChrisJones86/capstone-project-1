@@ -1,9 +1,10 @@
 import React from 'react';
 import './App.css';
 import Nav from "./components/Nav"
-import Header from "./components/Header"
 import Specials from "./components/Specials"
 import Main from "./components/Main"
+import Testimonials from "./components/Testimonials"
+import About from './components/About';
 import Footer from "./components/Footer"
 
 function App() {
@@ -12,7 +13,9 @@ function App() {
     <React.Fragment>
       <Nav />
       <Main />
-      <Specials/>
+      <Specials />
+      <Testimonials/>
+      <About/>
       <Footer />
     </React.Fragment>
     </div>

@@ -7,7 +7,7 @@ import Header from './components/Header';
 import Specials from './components/Specials';
 
 test('Renders the Header heading', () => {
-    render(<BrowserRouter><App /></BrowserRouter>);
+    render (<BrowserRouter><App /></BrowserRouter>);
     const headingElement = screen.getByText("Reserve Table");
     expect(headingElement).toBeInTheDocument();
 
