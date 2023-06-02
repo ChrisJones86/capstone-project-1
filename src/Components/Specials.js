@@ -11,6 +11,7 @@ const Specials = () => {
                 <div>
                     <h1>Specials</h1>
                 </div>
+                <div></div>
                 <div>
                     <Link to="/Booking"><button aria-label="On Click">Online Menu</button></Link>
                 </div>

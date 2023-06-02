@@ -1,5 +1,5 @@
 import React from "react";
-import Mario_and_Adrian from "../images/Mario and Adrian b.jpg"
+import Restaurant from "../images/restaurant.jpg"
 import { Link } from "react-router-dom";
 
 const About = () => {
@@ -7,13 +7,13 @@ const About = () => {
         <about>
             <section>
                 <div>
-                    <h3>Little Lemon</h3>
-                    <h4>Chicago</h4>
-                        <p>We are a family owned Mediterraneran restaurant, focused on traditional recipes servred with a modern twist.</p>
-                                <Link to="/Booking"><button aria-label="On Click">Reserve Table</button></Link>
+                    <h2>Little Lemon</h2>
+                    <h3>Chicago</h3>
+                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. </p>
                  </div>
                  <div>
-                     <img src={Mario_and_Adrian} alt="" />
+                     <img src={Restaurant} alt="" />
                 </div>
                 <div>
 

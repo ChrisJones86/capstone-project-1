@@ -127,8 +127,12 @@ header section {
   color: #EDEFEE; 
 }
 
+center section {
+  background-color: #94c7b6;
+}
+
 @media (min-width: 701px) {
-  body section {
+  center section {
     grid-template-columns: 1fr 1fr 1fr;
     display:grid;
     justify-items: center;
@@ -136,7 +140,7 @@ header section {
   }
 }
 
-body section {
+center section {
   grid-template-columns: 1fr 1fr 1fr;
   display:grid;
   justify-items: center;
@@ -147,6 +151,21 @@ center img{
   width: 400px;
   border-top-left-radius: 12pt;
   border-top-right-radius: 12pt;
+}
+
+about img {
+  height: 400px;
+  width: 500px;
+  border-radius: 12pt;
+}
+
+about section {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  width:80%;
+  margin-left: 10%;
+  padding-bottom: 50px;
 }
 
 @media (min-width: 701px) {
