@@ -4,7 +4,7 @@ import bruchetta from "../images/bruchetta.png"
 import lemon_dessert from "../images/lemon dessert1.png"
 import { Link } from "react-router-dom";
 
-const Body = () => {
+const Specials = () => {
     return(
         <body>
             <section>
@@ -31,4 +31,4 @@ const Body = () => {
     )
 }
 
-export default Body;
+export default Specials;

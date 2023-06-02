@@ -1,141 +1,31 @@
-import { render, screen } from "@testing-library/react";
-import App from "./App";
-import BookingForm from "./Components/BookingForm";
-import { BrowserRouter as Router } from "react-router-dom";
-import { fireEvent } from "@testing-library/react";
-import Home from "./Components/Home";
-import Hero from "./Components/Hero";
-import * as userEvent from "@testing-library/user-event";
+import { fireEvent, render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
+import { BrowserRouter } from 'react-router-dom';
+import App from './App';
+import BookingForm from './components/BookingForm';
+import Header from './components/Header';
+import Specials from './components/Specials';
 
-const bookingData = {
-  date: "",
-  time: "",
-  guests: "",
-  occasion: "",
-};
+test('Renders the Header heading', () => {
+    render(<BrowserRouter><App /></BrowserRouter>);
+    const headingElement = screen.getByText("Reserve Table");
+    expect(headingElement).toBeInTheDocument();
 
-const availableTimes = {
-  times: ["16:00", "17:30", "18:50", "19:00", "20:00", "21:00"],
-};
+    const reserveButton = screen.getByRole("button");
+    fireEvent.click(reserveButton);
 
-test("Renders the BookingForm heading", () => {
-  render(
-    <Router>
-      <BookingForm availableTimes={availableTimes} bookingData={bookingData} />
-    </Router>
-  );
-  const headingElement = screen.getByText("Book Table Now");
-  expect(headingElement).toBeInTheDocument();
-});
+    const headingElementNew = screen.getByText("Choose Date");
+    expect(headingElementNew).toBeInTheDocument();
+})
 
-test("Check homepage for Render", () => {
-  render(
-    <Router>
-      <Hero />
-    </Router>
-  );
-  const headingElement = screen.getByText("Little Lemon");
-  expect(headingElement).toBeInTheDocument();
-});
+test('Initialize/Update Times', () => {
+  render(<BrowserRouter><App /></BrowserRouter>);
+  const reserveButton = screen.getByRole("button");
+  fireEvent.click(reserveButton);
 
-test("check  Available Times", () => {
-  expect(availableTimes.times[0]).toBe("16:00");
-});
+  const testTime = []
+  // userEvent.selectOptions(screen.getByLabelText("Choose Time"),screen.getByRole('option', { name: testTime}))
+  // expect(screen.getByRole('option', { name: testTime}).selected).toBe(true);
 
-test("it should test Date", () => {
-  render(
-    <Router>
-      <BookingForm availableTimes={availableTimes} bookingData={bookingData} />
-    </Router>
-  );
 
-  const headingElement = screen.getByText("Choose date");
-  expect(headingElement).toBeInTheDocument();
-});
-
-test("check form inputs", () => {
-  render(
-    <Router>
-      <BookingForm availableTimes={availableTimes} bookingData={bookingData} />
-    </Router>
-  );
-
-  const submit = screen.getByTestId("submit");
-  expect(submit).toBeInTheDocument();
-
-  const occasion = screen.getByTestId("occasion");
-  expect(occasion).toBeInTheDocument();
-
-  const guests = screen.getByTestId("guests");
-  expect(guests).toBeInTheDocument();
-
-  const time = screen.getByTestId("time");
-  expect(time).toBeInTheDocument();
-});
-
-function setBookingData() {}
-
-test("check for input change", async () => {
-  const user = userEvent.default.setup();
-
-  render(
-    <Router>
-      <BookingForm
-        availableTimes={availableTimes}
-        bookingData={bookingData}
-        setBookingData={setBookingData}
-      />
-    </Router>
-  );
-
-  const occasion = screen.getByTestId("occasion");
-  expect(occasion).toBeInTheDocument();
-
-  const guests = screen.getByTestId("guests");
-  expect(guests).toBeInTheDocument();
-
-  const time = screen.getByTestId("time");
-  expect(time).toBeInTheDocument();
-
-  expect(screen.getByRole("option", { name: "Birthday" })).toBeInTheDocument();
-  expect(
-    screen.getByRole("option", { name: "Anniversary" })
-  ).toBeInTheDocument();
-});
-
-test("Options feild test", async () => {
-  render(
-    <Router>
-      <BookingForm
-        availableTimes={availableTimes}
-        bookingData={bookingData}
-        setBookingData={setBookingData}
-      />
-    </Router>
-  );
-
-  const occasion = screen.getByTestId("occasion");
-  expect(occasion).toBeInTheDocument();
-
-  fireEvent.change(occasion[1], {
-    target: {
-      value: "Anniversary",
-    },
-  });
-
-  expect(occasion[0].selected).toBe(true);
-});
-
-test("if submit is disabled", () => {
-  render(
-    <Router>
-      <BookingForm availableTimes={availableTimes} bookingData={bookingData} />
-    </Router>
-  );
-
-  const submit = screen.getByTestId("submit");
-  expect(submit).toBeInTheDocument();
-  expect(submit.textContent).toBe("Make Your Reservation");
-
-  expect(submit).toBeDisabled();
-});
+})

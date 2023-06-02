@@ -127,7 +127,7 @@ header section {
   color: #EDEFEE; 
 }
 
-specials section {
+mid section {
   grid-template-columns: 1fr 1fr 1fr;
   display:grid;
   justify-items: center;
