@@ -11,12 +11,12 @@ import React from "react"
              <div>
                  <h3>Document Navigation</h3>
              <ul>
-                 <li>Home</li>
-                 <li>About</li>
-                 <li>Menu</li>
-                 <li>Reservations</li>
-                 <li>Order Online</li>
-                 <li>Login</li>
+                 <li><a href="/header">Home</a></li>
+                 <li><a href="About">About</a></li>
+                 <li><a href="Specials">Menu</a></li>
+                 <li><a href="/Booking">Reservations</a></li>
+                 <li><a>Order Online</a></li>
+                 <li><a>Login</a></li>
              </ul>
              </div>
              <div>

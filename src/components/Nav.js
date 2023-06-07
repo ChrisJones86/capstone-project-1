@@ -6,10 +6,10 @@ import React from "react";
          <nav>
              <img src={littlelemon_logo} alt="Little Lemon Logo" ></img>
              <ul>
-                 <li><a>Home</a></li>
-                 <li><a>About</a></li>
-                 <li><a>Menu</a></li>
-                 <li><a>Reservations</a></li>
+                 <li><a href="/header">Home</a></li>
+                 <li><a href="About">About</a></li>
+                 <li><a href="Specials">Menu</a></li>
+                 <li><a href="/Booking">Reservations</a></li>
                  <li><a>Order Online</a></li>
                  <li><a>Login</a></li>
              </ul>
