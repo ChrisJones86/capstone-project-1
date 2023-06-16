@@ -1,1 +1,1 @@
-This is a react app. It was built for restaurant to add a Reseve Table function using APIs.
+This is a react app. It was built for a restaurant to add a Reseve Table function using APIs.
