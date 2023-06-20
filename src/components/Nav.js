@@ -6,9 +6,9 @@ import React from "react";
          <nav>
              <img src={littlelemon_logo} alt="Little Lemon Logo" ></img>
              <ul>
-                 <li><a href="/header">Home</a></li>
-                 <li><a href="About">About</a></li>
-                 <li><a href="Specials">Menu</a></li>
+                 <li><a href="https://little-lemon-capstone.netlify.app">Home</a></li>
+                 <li><a href="https://little-lemon-capstone.netlify.app">About</a></li>
+                 <li><a href="https://little-lemon-capstone.netlify.app">Menu</a></li>
                  <li><a href="/Booking">Reservations</a></li>
                  <li><a>Order Online</a></li>
                  <li><a>Login</a></li>

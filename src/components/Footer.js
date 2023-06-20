@@ -11,9 +11,9 @@ import React from "react"
              <div>
                  <h3>Document Navigation</h3>
              <ul>
-                 <li><a href="/header">Home</a></li>
-                 <li><a href="About">About</a></li>
-                 <li><a href="Specials">Menu</a></li>
+                 <li><a href="https://little-lemon-capstone.netlify.app/">Home</a></li>
+                 <li><a href="https://little-lemon-capstone.netlify.app/">About</a></li>
+                 <li><a href="https://little-lemon-capstone.netlify.app/">Menu</a></li>
                  <li><a href="/Booking">Reservations</a></li>
                  <li><a>Order Online</a></li>
                  <li><a>Login</a></li>
