@@ -1,5 +1,5 @@
 import React from "react";
- import waiter from "../images/waiter.png"
+ import waiter from "../images/waiter.png";
  import { Link } from "react-router-dom";
 
  const Header = () => {

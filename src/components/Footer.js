@@ -10,10 +10,10 @@ import React from "react"
              </div>
              <div>
              <ul>
-                 <li><a href="https://little-lemon-capstone.netlify.app/">Home</a></li>
-                 <li><a href="https://little-lemon-capstone.netlify.app/">About</a></li>
-                 <li><a href="https://little-lemon-capstone.netlify.app/">Menu</a></li>
-                 <li><a href="/Booking">Reservations</a></li>
+                 <li><a href="/">Home</a></li>
+                 <li><a href="/center">About</a></li>
+                 <li><a href="/Specials">Menu</a></li>
+                 <li><a href="/Booking">Reserve Table</a></li>
                  <li><a>Order Online</a></li>
                  <li><a>Login</a></li>
              </ul>
