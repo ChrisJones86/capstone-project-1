@@ -6,12 +6,12 @@ import React from "react";
          <nav>
              <img src={littlelemon_logo} alt="Little Lemon Logo" ></img>
              <ul>
-                 <li><a href="https://little-lemon-capstone.netlify.app">Home</a></li>
-                 <li><a href="https://little-lemon-capstone.netlify.app">About</a></li>
-                 <li><a href="https://little-lemon-capstone.netlify.app">Menu</a></li>
-                 <li><a href="/Booking">Reservations</a></li>
-                 <li><a>Order Online</a></li>
-                 <li><a>Login</a></li>
+                 <li><button class="navButton" href="https://little-lemon-capstone.netlify.app">Home</button></li>
+                 <li><button class="navButton" href="https://little-lemon-capstone.netlify.app">About</button></li>
+                 <li><button class="navButton" href="https://little-lemon-capstone.netlify.app">Menu</button></li>
+                 <li><button class="navButton" href="/Booking">Reservations</button></li>
+                 <li><button class="navButton">Order Online</button></li>
+                 <li><button class="navButton">Login</button></li>
              </ul>
          </nav>
      )

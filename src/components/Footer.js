@@ -9,7 +9,6 @@ import React from "react"
                  <img src={small_logo} alt=""/>
              </div>
              <div>
-                 <h3>Document Navigation</h3>
              <ul>
                  <li><a href="https://little-lemon-capstone.netlify.app/">Home</a></li>
                  <li><a href="https://little-lemon-capstone.netlify.app/">About</a></li>
@@ -20,7 +19,6 @@ import React from "react"
              </ul>
              </div>
              <div>
-                 <h3>Contact</h3>
              <ul>
                  <li>Address</li>
                  <li>Phone Number</li>
@@ -28,11 +26,10 @@ import React from "react"
              </ul>
              </div>
              <div>
-                 <h3>Social Media Links</h3>
              <ul>
-                 <li>Address</li>
-                 <li>Phone Number</li>
-                 <li>Email</li>
+                 <li>Facebook</li>
+                 <li>Instagram</li>
+                 <li>TikTok</li>
              </ul>
              </div>
              </section>

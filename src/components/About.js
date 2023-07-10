@@ -7,8 +7,7 @@ import React from "react";
          <about>
              <section>
                  <div>
-                     <h2>Little Lemon</h2>
-                     <h3>Chicago</h3>
+                     <h2>Made In Chicago</h2>
                          <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
  Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. </p>
                   </div>
