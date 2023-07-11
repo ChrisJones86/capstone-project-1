@@ -122,6 +122,7 @@ form {
 
 header {
   padding-top: 150px;
+  background-color:#495e57;
 }
 
  header img {
@@ -169,15 +170,13 @@ about img {
 }
 
 about section {
+  background-color:#495e57;
   display:grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
   width:80%;
   margin-left: 10%;
   padding-bottom: 50px;
-}
-
-about section{
   padding-top: 10;
 }
 
