@@ -1,5 +1,6 @@
 import React from "react"
  import small_logo from "../images/small_logo.png"
+ import { Link } from "react-router-dom";
 
  const Footer = () => {
      return(
@@ -13,7 +14,7 @@ import React from "react"
                  <li><a href="/">Home</a></li>
                  <li><a href="/center">About</a></li>
                  <li><a href="/Specials">Menu</a></li>
-                 <li><a href="/Booking">Reserve Table</a></li>
+                 <li><Link to='/Booking' aria-label="On Click"><a href="/Booking">Reserve Table</a></Link></li>
                  <li><a>Order Online</a></li>
                  <li><a>Login</a></li>
              </ul>
